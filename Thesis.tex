@@ -1,0 +1,80 @@
+\documentclass[defaultstyle,11pt]{thesis}
+
+\usepackage{amssymb}		% to get all AMS symbols
+\usepackage{graphicx}		% to insert figures
+\usepackage{hyperref}		% PDF hyperreferences??
+
+%%%%%%%%%%%%   All the preamble material:   %%%%%%%%%%%%
+
+\title{Dust Rotation and Swirl Morphology in Lunar Magnetic Anomalies}
+
+\author{Michael}{Gerard}
+
+\dept{Department of}			%  #1 {designation}
+	{Physics}		%  #2 {name}
+
+\advisor{Prof.}				%  #1 {title}
+	{Mih\`aly Hor\`anyi}			%  #2 {name}
+
+\reader{Prof.~Tobin Munsat}		%  2nd person to sign thesis
+\readerDept{Department of Physics}	% 2nd reader's department
+									% Added by Brooks Christensen
+                                   	% 4/4/17
+\readerThree{Prof.~Andrew Hamilton}		%  3rd person to sign thesis
+\readerThreeDept{Department of Astrophysics} 
+								% 3rd reader's department
+                                % Added by Brooks Christensen
+                               	% 4/4/17
+                                
+\defenseDate{April 14th, 2017}		% Added by Brooks Christensen
+									% 4/4/17
+
+
+\abstract{  \OnePageChapter	% because it is very short
+
+	It is believed that lunar magnetic anomalies (LMAs) are an essential component to lunar swirl morphology.  The influence of individual dust rotations on swirl morphology, however, has not been previously explored.  Therefore, in order to test the hypothesis that these rotations might influence swirl morphology, we have simulated the rotation of magnetized lunar dust grains as they travel through a simulated LMA.  We then analyze the resultant landing pattern to determine whether the orientation of the surface dust might affect the photometric properties of these lunar swirls.
+	}
+
+\dedication[Dedication]{	% NEVER use \OnePageChapter here.
+	To all of the fluffy kitties.
+	}
+
+\acknowledgements{	\OnePageChapter	% *MUST* BE ONLY ONE PAGE!
+	Here's where you acknowledge folks who helped.
+	But keep it short, i.e., no more than one page,
+	as required by the Grad School Specifications.
+	}
+
+% \IRBprotocol{E927F29.001X}	% optional!
+
+\ToCisShort	% use this only for 1-page Table of Contents
+
+\LoFisShort	% use this only for 1-page Table of Figures
+% \emptyLoF	% use this if there is no List of Figures
+
+\LoTisShort	% use this only for 1-page Table of Tables
+% \emptyLoT	% use this if there is no List of Tables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%       BEGIN DOCUMENT...         %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\input macros.tex
+\input chapter1.tex
+%\input chapter2.tex
+
+%%%%%%%%%   then the Bibliography, if any   %%%%%%%%%
+\bibliographystyle{unsrt}	% or "siam", or "alpha", etc.
+%\nocite{*}		% list all refs in database, cited or not
+\bibliography{bibSwirl}		% Bib database in "refs.bib"
+
+%%%%%%%%%   then the Appendices, if any   %%%%%%%%%
+\appendix
+\input appendixA.tex
+\input appendixB.tex
+
+
+\end{document}
+
